@@ -1,0 +1,186 @@
+//start style of contact page section
+
+.bgColor{
+    background-color: #f0f0f0;
+}
+.contact{
+    .contact-body{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        min-height: 200px;
+        background-color: #fff;
+        padding-top: 70px;
+        box-shadow: 0 -3px 10px #b5b5b5;
+        h2{
+            width: fit-content;
+            margin: 10px auto !important;
+            color: $thirdColor;
+            font-family: $hFont;
+        }
+        .form-group{
+
+            .second__form{
+                display: none;
+            }
+
+            .third__form{
+                display: none;
+            }
+            label{
+                font-family: $hFont;
+            }
+            select{
+                margin-bottom: 10px;
+                cursor: pointer;
+                option{
+                    color: $mainColor;
+                    font-weight: bold;
+                    font-family: $pFont;
+                }
+            }
+
+            @mixin question {
+                font-family: $hFont;
+                color: $fourColor;
+                display: none;
+            }
+            @mixin strong {
+                color: $mainColor;
+            }
+            @mixin hover {
+                text-decoration: none;    
+                }
+            @mixin answer {
+                font-family: $pFont;
+                font-size: .8rem;
+                box-decoration-break: clone;
+                padding-left: 15px; 
+                display: none; 
+            }
+
+            .membership__enq{
+                display: none;
+                .ques1-member{
+                    @include question();
+                    strong{
+                        @include strong();
+                    }
+                &:hover{
+                    @include hover();
+                }
+                }
+                .answer1-member{
+                    @include answer();
+                }
+
+                .ques2-member{
+                    @include question();
+                    strong{
+                        @include strong();
+                    }
+                &:hover{
+                    @include hover();
+                }
+                }
+                .answer2-member{
+                    @include answer();
+                }
+            }
+
+            .club-hours__enq{
+                display: none;
+                .ques1-club{
+                    @include question();
+                    strong{
+                        @include strong();
+                    }
+                &:hover{
+                    @include hover();
+                }
+                }
+                .answer1-club{
+                    @include answer();
+                }
+            }
+
+            .group-fitness__enq{
+                display: none;
+                .ques1-fit{
+                    @include question();
+                    strong{
+                        @include strong();
+                    }
+                &:hover{
+                    @include hover();
+                }
+                }
+                .answer1-fit{
+                    @include answer();
+                }
+            }
+
+            
+        
+
+            p{
+                font-family: $pFont;
+                font-size: 1.3rem;
+                display: none;
+                margin: 10px 0;
+            }
+
+
+            .fillForm{
+                display: none;
+                padding-bottom: 1em;
+                    .form-control{
+                        margin-bottom: 10px;
+                    }
+
+                    textarea{
+                        resize: none;
+                    }
+                    button{
+                        width: fit-content;
+                        padding: 10px;
+                        margin-bottom: 20px;
+                        border-radius: 10px;
+                        border: 1px solid transparent;
+                        outline: none;
+                        font-family: $pFont;
+                        font-weight: bold;
+                        background-color: $mainColor;
+                        color: #fff;
+                        display: block;
+                        margin: 20px auto;
+                        &:hover{
+                            border: 1px solid $mainColor;
+                            color: $mainColor;
+                            background-color: transparent;
+                        }
+                    }
+                    .ways{
+                        h5{
+                            color: $fourColor;
+                            font-family: $hFont;
+                        }
+                        p{
+                            display: block;
+                        }
+                        ins{
+                            color: $mainColor;
+                            font-weight: bold;
+                        }
+                    }
+            }
+
+
+        }
+    }
+}
+
+.hidden{
+    display: none !important;
+}
+//end style of contact page section

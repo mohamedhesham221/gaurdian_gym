@@ -1,0 +1,32 @@
+//start style of brands section
+.brands{
+    width: 100%;
+    min-height: 150px;
+    padding-top: 50px;
+    background-color: #F5F5F5;
+
+img{
+    margin: auto;
+}
+    .draggable{
+        height: 110px!important;
+    }
+    .slick-prev{
+        left: -65px;
+        top: 30%;
+        &::before{
+            font-size: 2rem;
+        color: $thirdColor;
+        }
+    }
+    .slick-next{
+        top: 30%;
+        right: -65px;
+        &::before{
+            font-size: 2rem;
+        color: $thirdColor;
+        }
+    }
+
+}
+//end style of brands section

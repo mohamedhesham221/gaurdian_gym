@@ -1,0 +1,43 @@
+//start style of rectangle section
+.rectangle{
+    width: 100%;
+    min-height: 90px ;
+    background-color: #ebe7e7;
+    margin-top: -70px;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 0 5px 10px #acacac;
+    position: sticky;
+    margin-bottom: 50px;
+
+    h2{
+        display: block;
+        color: $thirdColor;
+        font-size: 2.3rem;
+        font-family: $hFont;
+        margin-right: 5px;
+    }
+
+    .parag{
+        display: inline-block;
+
+        p{
+            &:first-child{
+                font-size: .9rem;
+                color: black;
+        font-family: $pFont;
+        margin-bottom: 0;
+        font-weight: bold;
+            }
+            & :last-child{
+                    font-size: .9rem;
+                    color: #bebebe;
+        font-family: $pFont;
+        margin-bottom: 0;
+                }
+            
+        }
+    }
+}
+//end style of rectangle section

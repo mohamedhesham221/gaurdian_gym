@@ -1,0 +1,247 @@
+//start style of about page section
+
+.about{
+    width: 100%;
+    min-height: 600px;
+    .about-cover{
+        width: 100%;
+        min-height: 300px;
+        position: relative;
+        .img-cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../images/about.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .svg-cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            }
+            svg{
+                width: 100%;
+                height: 100%;
+                margin-top: 50px;
+            }
+            .about-head{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                h2{
+                    font-family: $hFont;
+                    color: $secondColor;
+                    margin-left: 15%;
+                    margin-top: 10%;
+                    text-shadow: 0 0 20px currentColor;
+                }
+            }
+        }
+        .statistics{
+            width: 100%;
+            min-height: 250px;
+            padding-top: 50px;
+            background-color: #F0F0F0;
+            h3{
+                font-family: $hFont;
+                display: inline-block;
+            }
+            span{
+                font-family: $pFont;
+            }
+        }
+        .story{
+            width: 100%;
+            min-height: 400px;
+            padding-top: 50px;
+            h2{
+                font-family: $hFont;
+            }
+            p{
+                font-family: $pFont;
+                font-size: .9rem;
+            }
+        }
+        .background-img-about{
+            width: 100%;
+            height: 300px;
+            background-image: url('../images/bg7.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .customer-service{
+            width: 100%;
+            min-height: 400px;
+            padding-top: 50px;
+            h2{
+                font-family: $hFont;
+            }
+            p{
+                font-family: $pFont;
+                font-size: .9rem;
+            }
+        }
+
+        .values{
+            width: 100%;
+            min-height: 600px;
+            padding-top: 50px;
+            background-color: #F0F0F0;
+            h2{
+                margin-bottom: 50px;
+                font-family: $hFont;
+                color: $thirdColor;
+            }
+            h4{
+                font-family: $hFont;
+                i{
+                font-size: 5rem;
+                }
+            }
+            h5{
+                font-family: $hFont;
+            }
+            p{
+                font-family: $pFont;
+                font-size: .9rem;
+            }
+        }
+
+        .team{
+            width: 100%;
+            min-height: 500px;
+            padding-top: 100px;
+            background-image: url('../images/bg8.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            h3{
+                font-family: $hFont;
+                color: $backgroundColor;
+            }
+            p{
+                font-family: $pFont;
+                color: $backgroundColor;
+            }
+            button{
+                width: fit-content;
+                padding: 10px;
+                outline: none;
+                background-color: $thirdColor;
+                color: $backgroundColor;
+                font-family: $pFont;
+                font-weight: bold;
+                &:hover{
+                    background-color: #F0F0F0;
+                    border: 1px solid $thirdColor;
+                    color: $thirdColor;
+                }
+            }
+        }
+
+        .membership{
+            position: fixed;
+            top: 200px;
+            left: 0;
+            z-index: 5;
+            width: fit-content;
+            padding: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            outline: none;
+            background-color: $thirdColor;
+            border: none;
+            box-shadow: 0 10px 20px black;
+            transition: all .2s linear;
+            &:hover{
+                padding-left: 20px;
+            }
+            i{
+                color: #F0F0F0;
+                font-size: 2rem;
+            }
+        }
+        .chating{
+            @extend .membership;
+            top: 300px;
+            i{
+                color: #F0F0F0;
+                font-size: 1.8rem;
+            }
+        }
+
+        .modal{
+            z-index: 9999999;
+            .modal-content{
+                .modal-header{
+                    padding: .4rem .4rem;
+                    background-color: $thirdColor;
+                    &:first-of-type{
+                    border: none;
+                    }
+                    h5{
+                        font-family: $pFont;
+                        margin-right: 10px;
+                        font-weight: bold;
+                        color: #ffffff;
+                    }
+                    h3{
+                        font-family: $hFont;
+                        color: #ffffff;
+                    }
+                }
+
+                .modal-body{
+                    .divider{
+                        border-bottom: .5px solid #F0F0F0;
+                        margin: 20px auto;
+                    }
+
+                    h6,h5{
+                        font-family: $hFont;
+                        color: $fourColor;
+                    }    
+                    p{
+                        font-family: $pFont;
+                        color: $fourColor;
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+                    .become-member{
+                        
+                        button{
+                            width: fit-content;
+                            padding: 5px;
+                            border: none;
+                            outline: none;
+                            background-color: $thirdColor;
+                            color: #FFF;
+                        }
+                    }
+
+                    .message-us{
+                        p{
+                            cursor: pointer;
+                            padding: 5px;
+                            &:hover{
+                                background-color: #F0F0F0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+//start style of about page section

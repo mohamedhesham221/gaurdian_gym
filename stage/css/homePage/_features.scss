@@ -1,0 +1,90 @@
+//start style of features section
+.features{
+    width: 100%;
+    min-height: 655px;
+    padding-top: 70px;
+    h2{
+        font-family: $hFont;
+        color: $thirdColor;
+        &::after{
+            content: '';
+            display: block;
+            border-bottom: 1.5px solid $fourColor;
+            width: 100px;
+            margin: 20px auto;
+        }
+    }
+    .img-feature{
+        width: 600px;
+        height: 400px;
+        background-color: $mainColor;
+        margin: 50px auto;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all .5s ease-in-out;
+            &:hover{
+                transform: translate(10px , 10px);
+            }
+        }
+    }
+
+
+    .sale-item{
+        position: relative;
+        width: 100%;
+        height: 285px;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+        &:hover{
+            box-shadow: -6px -6px 3px #e0e0e0;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+                }
+        .sale-square{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 80px;
+            padding: 3px;
+            background-color: $mainColor;
+            color: $backgroundColor;
+            font-family: $hFont;
+                        }
+                        .icons-item{
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            bottom: -40px;
+                            margin: auto;
+                            z-index: 5;
+                            width: fit-content;
+                            i{
+                                padding: 5px;
+                                color: $backgroundColor;
+                                font-size: 1.2rem;
+                                margin: 5px;
+                                cursor: pointer;
+                                background-color: $mainColor;
+                                border-radius: 5px;
+                                &:hover{
+                                    opacity: .5;
+                                }
+                            }
+                        }
+                    }
+    .title-item{
+        font-family: $hFont;
+    }
+
+}
+//end style of features section

@@ -1,0 +1,66 @@
+@media (min-width: 769px) and (max-width: 991px){
+    .navbar {
+        .nav-item {
+          width: 0;
+          border-bottom: 2px solid $secondColor;
+          transition: all 0.5s ease-in-out;
+    
+          &:hover {
+            width: 5%;
+          }
+        }
+      }
+
+      .slick{
+        .bg1{
+          padding-bottom: 145px;
+        }
+      .bg2{
+        padding-bottom: 145px;
+      }
+      .bg3{
+        padding-bottom: 145px;
+      }
+      .bg4{
+        padding-bottom: 145px;
+      }
+        h2{
+          font-size: 2.4rem;
+        }
+      p{
+          font-size: 1rem !important;
+      }
+      }
+
+      .advertise2{
+        .content-advertise2{
+          padding-top: 140px;
+        }
+      }
+      .testimonial{
+        .col{
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .brands{
+        .slick-next,.slick-prev{
+          display: none !important;
+        }
+      }
+
+      footer{
+        text-align: center;
+        ul{
+          list-style: none;
+        }
+        .copywrite{
+          height: 80px;
+          margin-top: 5px;
+        }
+        .top{
+          bottom: 85px
+        }
+      }
+}

@@ -1,0 +1,55 @@
+@media (min-width: 300px) and (max-width: 768px){
+    .products{
+        .products-cover{
+            min-height: 200px !important;
+        }
+        
+        .svg-cover{
+            display: none;
+        }
+        .tabs{
+            margin: 20px 0;
+            a{
+                font-size: 1.2rem;
+            }
+        }
+        #clone{
+            margin-bottom: 10px;
+        }
+    }
+
+    .items-align{
+        @for $i from 1 through 24 {
+            .img__product__item__align#{$i}{
+                img{
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+
+        @for $x from 1 through 24{
+            .product__details__item__align#{$x}{
+                button{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    #bookmarkModal{
+        .box{
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .bookmark{
+            margin: auto !important;
+        }
+    }
+
+    #checkoutModal {
+        .total__price{
+            margin: auto !important;
+        }
+    }
+}

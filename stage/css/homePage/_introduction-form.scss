@@ -1,0 +1,75 @@
+//start style of introduction form section
+.intro-form{
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a93;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: block;
+    padding-top: 100px;
+    .pl{
+        padding-left: 0;
+        filter: drop-shadow(0 5px 8px #f2f2f2);
+    }
+
+    .form-group{
+        margin: auto;
+        width: 50%;
+        height: 400px;
+        background-color: #f2f2f2;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        position: relative;
+        h3{
+            padding-top: 70px;
+            font-family: $hFont;
+        }
+        p{
+            font-family: $pFont;
+            font-size: 1rem;
+        }
+        .form-control{
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        button{
+            width: 30%;
+            height: 35px;
+            font-family: $pFont;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .close-form{
+            position: absolute;
+            top: 0;
+            left: 0;
+            i{
+                font-size: 2rem;
+                cursor: pointer;
+                color: $thirdColor;
+                filter: drop-shadow(0 5px 8px black);
+            }
+        }
+
+        .social{
+            $list:  (twitter-square,#55acee ,1.5rem, 20px),
+                    (instagram-square,#e4405f ,1.5rem, 20px),
+                    (dribbble-square,#ea4c89 ,1.5rem, 20px),
+                    (behance-square,#131418 ,1.5rem, 20px);
+
+                    @each $social,$color,$size,$margin in $list {
+                        .fa-#{$social}{
+                            color: $color;
+                            font-size: $size;
+                            margin-right: $margin;
+                        }
+                    }
+
+
+        }
+    }
+}
+//end style of introduction form section

@@ -1,0 +1,90 @@
+//start style of testimonial section
+.testimonial{
+    width: 100%;
+    min-height: 500px;
+    padding-top: 100px;
+    h3{
+        font-family: $hFont;
+        color: $thirdColor;
+        &::after{
+            content: '';
+            display: block;
+            border-bottom: 2px solid $fourColor;
+            width: 100px;
+            margin: 20px auto;
+        }
+    }
+    h4{
+        font-family: $hFont;
+        font-size: 2.2rem;
+    }
+    p{
+        font-family: $pFont;
+    }
+    h5{
+        font-weight: bold;
+        font-family: $hFont;
+        letter-spacing: 1;
+    }
+
+    .photos{
+        width: 100%;
+        height: 100%;
+        .col{
+            padding: 15px!important;
+        }
+        .item-test{
+            width: 160px;
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+        .item-img{
+            width: 100%;
+            height: 100%;
+            
+                @for $i from 1 through 6 {
+                    .num#{$i}{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 4;
+                        cursor: pointer;
+                    }
+                }
+            
+
+            
+        }
+        .item-hover1{
+            width: 300%;
+            height: 300%;
+            position: absolute;
+            bottom: 120px;
+            left: 0;
+            z-index: 5;
+            padding: 15px;
+            transform: rotate(45deg);
+            background-color: #fb6c2f9d;
+        }
+
+        .item-hover2{
+            @extend .item-hover1;
+        }
+        .item-hover3{
+            @extend .item-hover1;
+        }
+        .item-hover4{
+            @extend .item-hover1;
+        }
+        .item-hover5{
+            @extend .item-hover1;
+        }
+        .item-hover6{
+            @extend .item-hover1;
+        }
+        }
+    }
+}
+//end style of testimonial section

@@ -1,0 +1,41 @@
+//start style of advertise2 section
+.advertise2{
+    width: 100%;
+    height: 455px;
+    background-color: #111129;
+    position: relative;
+    .bg-cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/bg6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: .6;
+    }
+    .content-advertise2{
+        
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        padding-top: 100px;
+        h2{
+            font-family: $hFont;
+            color: $secondColor;
+            font-size: 2.8rem;
+        }
+        p{
+            color: $backgroundColor;
+            font-family: $pFont;
+            font-size: 1rem;
+        }
+    }
+}
+//end style of advertise2 section

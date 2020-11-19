@@ -1,0 +1,108 @@
+//start style of blog page section
+.blog{
+    width: 100%;
+    min-height: 600px;
+    .blog-cover{
+        width: 100%;
+        min-height: 300px;
+        position: relative;
+        .img-cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../images/blog.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .svg-cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            }
+            svg{
+                width: 100%;
+                height: 100%;
+                margin-top: 50px;
+            }
+            .about-head{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                h2{
+                    font-family: $hFont;
+                    color: $secondColor;
+                    margin-left: 15%;
+                    margin-top: 10%;
+                    text-shadow: 0 0 20px currentColor;
+                }
+            }
+        }
+
+        .blog-content{
+            width: 100%;
+            padding-top: 100px;
+            .post{
+                width: 100%;
+                min-height: 300px;
+                h4{
+                    font-family: $hFont;
+                    cursor: pointer;
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+                span{
+                    font-family: $pFont;
+                    color: #b9b9b9;
+                }
+                .post-body{
+                    width: 100%;
+                    display: flex;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                    p{
+                        @extend span;
+                        font-size: 1rem;
+                        margin-left: 100px;
+                    }    
+                }
+            }
+
+            .divider{
+                border-bottom: .5px solid #F0F0F0;
+                margin: 20px auto;
+            }
+
+            
+                .pagination{
+                    .page-item:first-child .page-link{
+                        font-size: 1.3rem;
+                    }
+                    .page-item:first-child .page-link{
+                        font-size: 1.3rem;
+                    }
+                    .page-item:last-child .page-link{
+                        font-size: 1.3rem;
+                    }
+
+                    .page-item.active .page-link{
+                        background-color: #b9b9b9;
+                        border-color: #b9b9b9;
+                    }
+                }
+            
+        }
+        
+}
+//end style of blog page section

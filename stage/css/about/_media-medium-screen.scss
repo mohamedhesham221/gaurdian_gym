@@ -1,0 +1,10 @@
+@media (min-width: 769px) and (max-width: 991px){
+    .about{
+        .about-cover{
+            min-height: 220px;
+        }
+        .product,.customer,.feedback,.orders{
+            margin-bottom: 25px;
+        }
+    }
+}

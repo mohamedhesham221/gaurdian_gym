@@ -1,0 +1,149 @@
+@media (min-width: 300px) and (max-width: 768px) {
+
+  .navbar {
+    .nav-item {
+      width: 0;
+      border-bottom: 2px solid $secondColor;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        width: 5%;
+      }
+    }
+  }
+
+  .intro-form {
+
+    .form-group {
+      width: 100%;
+      h3{
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.8rem !important;
+      }
+
+      .form-control {
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: fit-content;
+        padding: 3px;
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+      }
+    }
+
+    .social{
+      i{
+        font-size: 2.5rem !important;
+      }
+    }
+  }
+
+  .slick{
+    h2{
+      font-size: 2rem !important;
+    }
+  }
+  .rectangle{
+    h2{
+      font-size: 1.7rem !important;
+    }
+
+    .parag{
+      display: inline-block;
+
+      p{
+          &:first-child{
+              font-size: .7rem !important;
+          }
+          & :last-child{
+                  font-size: .7rem !important;
+          }          
+      }
+  }
+  }
+
+  p{
+    font-size: 1rem!important;
+  }
+
+  .category{
+    h2{
+      font-size: 2rem!important;
+    }
+    .content{
+      width: 100% !important;
+      height: 410px !important;
+      margin: 50px auto !important;
+    }
+  }
+
+  .advertise{
+    width: 100% !important;
+    margin-top: 80px !important;
+    h2{
+      font-size: 1.5rem;
+    }
+  }
+
+  .features {
+
+    h2{
+      font-size: 2rem !important;
+    }
+  .img-feature{
+    width: 100%;
+    
+  }
+}
+
+  .content-advertise2{
+    padding-top: 50px !important;
+    .women ,.men {
+      h2{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: .8rem !important;
+      }
+    }
+    
+  }
+
+  .testimonial{
+    .photos{
+      .col{
+        min-width: unset;
+      }
+      .item-test{
+        margin: auto;
+      }
+    }
+  }
+
+  .brands{
+    .slick-next,.slick-prev{
+      display: none !important;
+    }
+  }
+
+  footer{
+    ul{
+      list-style: none;
+    }
+
+    .copywrite{
+      height: 80px;
+      margin-top: 5px;
+    }
+    .top{
+      bottom: 85px
+    }
+  }
+
+  
+}

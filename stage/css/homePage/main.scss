@@ -1,0 +1,52 @@
+$mainColor: #EF3D45;
+$secondColor: #FEF102;
+$thirdColor: #FB6B2F;
+$fourColor: #0f0f0f;
+$backgroundColor: #FFFFFF;
+$hFont: 'Anton', sans-serif;
+$pFont: 'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+//home page
+@import 'introduction-form';
+@import 'navbar';
+@import 'home';
+@import 'rectangle';
+@import 'category';
+@import 'advertise';
+@import 'features';
+@import 'second-advertise';
+@import 'testimonial';
+@import 'brands';
+@import 'footer';
+@import 'media-large-screen';
+@import 'media-medium-screen';
+@import 'media-small-screen';
+
+
+//about page
+@import '../about/about';
+@import '../about/media-small-screen';
+@import '../about/media-medium-screen';
+@import '../about/media-large-screen';
+
+//blog page
+@import '../blog/blog';
+@import '../blog/media-small-screen';
+@import '../blog/media-medium-screen';
+@import '../blog/media-large-screen';
+
+//contact page
+@import '../contact/contact';
+
+//products page
+@import '../products/products';
+@import '../products/products-small-media-screen';
+@import '../products/products-medium-media-screen';
+@import '../products/products-large-media-screen';
+

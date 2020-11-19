@@ -1,0 +1,21 @@
+@media (min-width: 992px) and (max-width: 1200px){
+    .items{
+        text-align: center;
+        .fancybox{
+            img{
+                width: 200px !important;
+                height: 200px !important;
+            }
+        }
+    }
+
+    .tabs{
+        margin: 20px 0;
+        a{
+            font-size: .7rem;
+        }
+    }
+    #clone{
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,90 @@
+//start style of navigation bar form section
+#navigation{
+    width: 100%;
+
+    img{
+        width: 65px;
+        height: 65px;
+        margin-right: 50px;
+    }
+
+    .dropdown-menu{
+        .dropdown-item{
+            font-family: $hFont;
+            color: $mainColor;
+            transition: all .5s ease-in-out;
+            padding-left: 10px;
+            &:hover{
+                padding-left: 20px;
+                background-color: #343A40;
+            }
+        }
+    }
+
+    form{
+        .form-control{
+            border: none;
+            border-radius: unset;
+            border-bottom: 3px solid $mainColor;
+            background-color: transparent;
+            &:focus{
+                box-shadow: none;
+                border-bottom: 3px solid $mainColor;
+                background-color: transparent;
+                color: #f2f2f2;
+            }
+            button{
+                i{
+                    cursor: pointer;
+                }
+            }
+        }
+    a{
+        color: $mainColor;
+        font-size: 1.5rem;
+        sup{
+            color: $secondColor;
+            font-weight: bold;
+        }
+        &:hover{
+            color: $mainColor;
+        }
+    }
+    }
+
+    .active > .nav-link{
+        color: $secondColor!important;
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                width: max-content;
+                letter-spacing: .1em;
+                font-family: $hFont;
+                color: $mainColor;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+.fixed-class{
+    width: 100%;
+    box-shadow: 0 5px 7px #575757;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all .5s ease-in-out;
+    animation: move 1s ease-in-out;
+
+}
+@keyframes move{
+    from{
+        top: -150px;
+    }
+    to{
+        top: 0;
+    }
+}
+//end style of navigation bar form section

@@ -1,0 +1,17 @@
+@media (min-width: 300px) and (max-width: 768px){
+    .blog{
+        .blog-cover{
+            min-height: 200px;
+        }
+        .svg-cover{
+            display: none;
+        }
+        .post-body{
+            display: block !important;
+            p{
+                margin: 20px 0 0 0 !important;
+            }
+        }
+    }
+
+}

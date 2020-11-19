@@ -1,0 +1,50 @@
+//start style of home section
+.slick{
+    overflow: hidden;
+    width: 100%;
+    max-height: 620px!important;
+    background-color: #0b1727;
+    h2{
+        font-family: $hFont;
+        color: $secondColor;
+        margin-top: 150px;
+        font-size: 5rem;
+    }
+    p{
+        font-family: $pFont;
+        color: #f2f2f2;
+        font-weight: bold;
+        background-color: #0000005c;
+        border-radius: 10px;
+    }
+    
+    .bg1{
+        background-image: url('../images/bg1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    .bg2{
+        background-image: url('../images/bg2.jpg');
+        @extend .bg1;
+    }
+    .bg3{
+        background-image: url('../images/bg3.jpg');
+        @extend .bg1;
+    }
+    .bg4{
+        background-image: url('../images/bg4.jpg');
+        @extend .bg1;
+    }
+
+    .slick-list , .slick-track{ 
+        max-height: 620px;
+    }
+
+    .slick-next ,.slick-prev{
+        display: none !important;
+    }
+}
+//end style of home section

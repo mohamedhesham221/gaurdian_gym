@@ -1,0 +1,119 @@
+//start style of footer section
+footer{
+    width: 100%;
+    min-height: 400px;
+    padding-top: 100px;
+    background-color: #495057;
+    position: relative;
+    h6{
+        color: $backgroundColor;
+        font-family: $hFont;
+        letter-spacing: 1;
+    }
+    ul{
+        list-style-image: url(../images/dumb.png);
+        li{
+            color: #dfdfdf;
+            font-family: $pFont;
+            cursor: pointer;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    p{
+        font-size: .8rem!important;
+        font-family: $pFont;
+        color: #dfdfdf;
+    }
+
+    .form-group{
+        position: relative;
+        
+        .form-control{
+            height: 47px;
+        }
+            button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: fit-content;
+                padding: 10px;
+                background-color: $thirdColor;
+                font-family: $pFont;
+                color: #fff;
+            }
+        
+    }
+
+    .social{
+        $list: (facebook-f,#3b5999 , 1.5rem ),
+        (instagram,#e4405f , 1.5rem),
+        (pinterest-p,#bd081c ,1.5rem),
+        (twitter, #55acee, 1.5rem);
+
+        @each $social,$color,$font in $list {
+            .fa-#{$social}{
+                color: #dfdfdf;
+                font-size: $font;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+                padding: 7px;
+                &:not(:last-child){
+                    margin-right: 20px;
+                }
+                &:hover{
+                    background-color: $color;
+                }
+            }
+        }
+    }
+
+    .copywrite{
+        width: 100%;
+        border-top: 1px solid $fourColor;
+        margin-top: 40px;
+        padding-top: 20px;
+
+        .left-div{
+            color: #fff;
+            font-family: $pFont;
+            font-weight: bold;
+        }
+        .right-div{
+            i{
+            transition: all .2s ease-in-out;
+            color: #dfdfdf;
+            font-size: 2rem;
+            cursor: pointer;
+            &:hover{
+                color: #fff;
+            }
+            }
+        }
+    }
+
+    //move to top button
+    #top{
+        text-align: center;
+        position: fixed;
+        bottom: 5px;
+        right: -50px;
+        z-index: 99999;
+        width: fit-content;
+        background-color: $mainColor;
+        color: #fff;
+        padding: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        font-family: $pFont;
+        box-shadow: 0 -4px 8px #747373;
+        cursor: pointer;
+        i{
+            transform: rotate(-45deg);
+            font-size: 1.8rem;
+        }
+    }
+}
+//start style of footer section

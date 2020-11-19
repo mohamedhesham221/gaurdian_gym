@@ -1,0 +1,41 @@
+//start style of advertise section
+.advertise{
+    padding-top: 100px;
+    padding-left: 50px;
+    background-image: url('../images/bg5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 455px;
+    background-attachment: fixed;
+
+    h6{
+        background-color: $mainColor;
+        color: $backgroundColor;
+        font-family: $pFont;
+        width: fit-content;
+        padding: 5px;
+    }
+    h2{
+        color: $backgroundColor;
+        font-family: $hFont;
+    }
+
+    p{
+        font-family: $pFont;
+        color: $backgroundColor;
+        font-size: .8rem;
+    }
+
+    button{
+        width: 100px;
+        height: 30px;
+        background-color: white;
+        font-family: $hFont;
+        outline: none;
+        border: none;
+        color: $mainColor;
+
+    }
+}
+//end style of advertise section

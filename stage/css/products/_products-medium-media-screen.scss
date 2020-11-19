@@ -1,0 +1,19 @@
+@media (min-width: 769px) and (max-width: 991px){
+    .products{
+        .products-cover{
+            min-height: 220px;
+        }
+
+        .tabs{
+            margin: 20px 0;
+            a{
+                font-size: .6rem;
+            }
+        }
+
+        #clone{
+            margin-bottom: 10px;
+        }
+
+    }
+}

@@ -1,0 +1,65 @@
+@media (min-width: 992px) and (max-width: 1200px){
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding: 0 .4rem;
+    }
+    
+    .rectangle{
+        h2{
+            display: block;
+        }
+        p{
+            display: block;
+        }
+    }
+
+    .content-advertise2{
+        padding-top: 140px !important;
+    
+        h2{
+        font-size: 2rem !important;        
+        }
+        }
+
+    .testimonial{
+        .photos{
+            .item-test{
+                width: 140px;
+                height: 140px;
+            }
+        }
+    }
+
+    .brands{
+        .slick-next{
+            top: 40%;
+            right: 0;
+        }
+        .slick-prev{
+            top: 40%;
+            left: 0;
+        }
+    }
+
+    footer{
+
+        ul{
+            list-style: none;
+        }
+
+        .form-group{
+            .form-control{
+                height: 30px;
+            }
+            button{
+                width: 70px;
+                height: 30px;
+                font-size: .7rem;
+                padding: 5px;
+            }
+
+        }
+        .top{
+            bottom: 100px
+        }
+    }
+}
