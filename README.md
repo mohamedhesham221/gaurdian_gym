@@ -1,4 +1,9 @@
 # gaurdian_gym
-## create shopping web site
+
+### Overview
  A sports store that sells sports products, including equipment and clothes.
-## live preview => https://guardian-gym-2020.netlify.app/
+ 
+#### live https://guardian-gym-2020.netlify.app/
+
+#### Built With
+HTML5 / CSS3 / JAVASCRIPT / JQUERY / Bootstrap 4 / SCSS / AOS.JS / GULP.JS
